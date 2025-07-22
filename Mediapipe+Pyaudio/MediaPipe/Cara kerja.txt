@@ -1,0 +1,33 @@
+Dijalankan dalam VSCODE
+
+Diperlukan untuk menginstal python, mediapipe, dan pandas.
+
+instal python dapat dilakukan pada link: https://www.python.org/downloads/
+
+Versi Python saya pakai: Python 3.11.9
+
+dan perlu jalankan input ini dalam terminal untuk instalasinya:
+
+pip install opencv-python
+pip install mediapipe
+pip install pandas
+
+Khusus macOS
+Webcam biasanya perlu akses izin kamera. Pastikan:
+Python sudah diberikan akses ke kamera melalui System Preferences > Privacy > Camera.
+
+setelah melakukan instalasi maka code bisa dijalankan pada VSCODE Terminal dengan
+tentukan pathing folder dimana code berada
+misalkan: C:\Users\Dzarckie\Desktop\MediaPipe
+
+dengan input ke terminal:
+cd C:\Users\Dzarckie\Desktop\MediaPipe
+
+Lalu jalankan dengan input:
+python hand_face_mesh_2.py 	// python (Nama_file_Code).py
+
+Setelah input akan diminta untuk masukan nama folder untuk geturenya lalu masukan jenis emotionnya untuk nama foldernya saat di save jadi .csv
+Setelah ini akan muncul kamera view mediapipe dengan sudah kasih mesh pada wajah yang tertangkap pada kamera. penangkapan frame koordinat dengan
+menekan tombol "S" bisa diambil dalam banyak frame buat 1 jenis gesture dan emeosi jika sudah bisa berhentikan dengan tekan "Q"
+
+untuk gambaran terminalnya seperti apa saat dijalankan bisa cek di gambar screenshot

@@ -1,0 +1,43 @@
+PyAudio bisa dijalankan dengan Visual Code Studio Terminal.
+
+Hal yang perlu di cek seperti instalasi python dan pyaudio
+
+Python bisa didownload pada link: https://www.python.org/downloads/
+
+Versi Python saya pakai: Python 3.11.9
+
+Instal pyaudio: 
+Dengan menjalankan input ini pada Terminal VSCODE:
+
+# Untuk Windows
+pip install pipwin
+pipwin install pyaudio
+
+
+Linux/macOS buka terminal jalankan:
+
+# Untuk Linux
+sudo apt update
+sudo apt install portaudio19-dev
+pip install pyaudio
+
+# Untuk macOS (pakai brew)
+brew install portaudio
+pip install pyaudio
+
+
+Setelah melakukan instalasi ini sudah bisa menjalankan pyaudio ini dengan cara
+tentukan pathing folder dimana code berada
+misalkan: C:\Users\Dzarckie\Desktop\PyAudio_Record
+
+Maka saat jalankan terminal tulis: 
+cd C:\Users\Dzarckie\Desktop\PyAudio_Record
+
+Lalu jalankan dengan input:
+python record_audio.py		// python (Nama_file_Code).py
+
+Setelah input akan langsung merekan sesuai durasi yang diatur dalam kode dan bisa diubah durasi perekamannya.
+Pyaudio akan menangkap dengan mikrofon tersambung dan merekam selama durasi yang sudah diatur dalam code.
+lalu membuat file .wav didalam folder yang sama dengan codenya.
+
+Bisa dilihat pada gambar screenshot.
